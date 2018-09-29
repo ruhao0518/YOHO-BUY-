@@ -1,0 +1,51 @@
+@charset 'utf-8';
+@import 'wrapper';
+@import 'header';
+@import 'banner';
+@import 'singlehot';
+@import 'ad';
+@import 'title';
+@import 'showbrands';
+@import 'jacket';
+@import 'newgoods';
+@import 'footer';
+*{
+    padding: 0;
+    margin: 0;
+}
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+.clear{
+    clear: both;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+.gray{
+    color: #8e8e8e;
+    font-size: 14px;
+}
+.red{
+    color: red;
+}
+.clearfix:after,.clearfix:before{
+    content:".";
+    display:table;
+ }
+  .clearfix:after{
+    clear:both;
+}
+.wrapper{
+    width: 1150px;
+    margin: 0 auto;
+} 
+
+ 
+ 

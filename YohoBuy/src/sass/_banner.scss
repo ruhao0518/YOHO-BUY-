@@ -1,0 +1,65 @@
+.banner-content{
+    height:510px;
+    padding-top:10px;
+    position: relative;
+    
+}
+.banner-nav .last img{
+    padding-right: 0;
+}
+.banner-nav li{
+            /* 小图的li  */
+    float: left;
+    
+}
+.banner-nav li img{
+    padding-right: 6.4px;
+}
+.banner-bot{   /*小图的盒子，定位到大盒子底部*/
+    
+    position: absolute;
+    bottom: 0;
+    left: 0; 
+}
+.banner-top{      /*大图盒子*/
+    position: absolute;
+    left: 0;
+    top: 10px;
+    
+}
+.banner-pic{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 1150px;
+}
+.banner-pic li{       /* 大图的li,动画0.5s */
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: 0.5s;
+}
+.banner-pic .active{
+    opacity: 1;  
+}
+.btn-left,.btn-right{
+    font-size: 40px;
+    color: #ccc;
+    cursor: pointer;
+}
+.btn-left{
+    position: absolute;
+    left: 5px;
+    top:220px;
+    color: #58585a;
+    font-size: 32px;
+}
+.btn-right{
+    position: absolute;
+    right: 5px;
+    top:220px;
+    color: #58585a;
+    font-size: 32px;
+
+}
