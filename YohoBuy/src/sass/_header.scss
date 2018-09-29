@@ -102,6 +102,44 @@
             vertical-align: middle;
             line-height: 30px; 
         }
+        .servce{
+            cursor: pointer;
+            position: relative;
+            display: block;
+            color: #8e8e8e;
+            &:hover{
+                background: #dcdcdc
+            }
+            ul{
+                position: absolute;
+                top:32px;
+                left: 0px;
+                height: 66px;
+                z-index: 2;
+                display: none;
+                
+            }
+            &:hover ul{
+                display: block;
+                transition: all 0.8s;
+            }
+            li{
+                border-top:1px solid #c9c9c9;
+                box-sizing: border-box;
+                padding-right: 0px;
+            }
+            li a{
+                display: inline-block;
+                height: 33px;
+                width: 92px;
+                background: #dcdcdc;
+                text-align: center;
+                line-height: 33px;
+                
+                
+            }
+        }
+        
         ul{
             li{
                 float: left;

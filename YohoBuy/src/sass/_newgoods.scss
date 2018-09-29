@@ -1,4 +1,25 @@
 .newgoods{
-    height: 400px;
-    background: orchid;
+    
+    
+    li{
+        width: 222px;
+        margin-top: 22px;
+        float: left;
+        padding-right: 8px;
+        img{
+            width: 100%;
+        }
+        .goodname{
+            display: block;
+            color: black;
+            text-align: center;
+            margin-top:16px;
+            font-size: 12px;
+        }
+        p{
+            text-align: center;
+            margin-top:5px;
+            font-size: 12px;
+        }
+    }
 }

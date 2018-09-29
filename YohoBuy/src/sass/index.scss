@@ -8,6 +8,7 @@
 @import 'showbrands';
 @import 'jacket';
 @import 'newgoods';
+@import 'loading';
 @import 'footer';
 *{
     padding: 0;
@@ -46,6 +47,20 @@ li{
     width: 1150px;
     margin: 0 auto;
 } 
+.pr{
+    position: relative;
+}
+.more-style{
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    a{
+        color: #000;
+    }
+}
+.more-style:hover{
+    text-decoration: underline;
+}
 
  
  

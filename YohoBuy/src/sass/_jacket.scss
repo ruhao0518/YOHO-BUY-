@@ -1,18 +1,12 @@
 .jacket{
-    height: 885px;
-    background: #ccc;
+    img{
+        opacity: 1;
+    }
+    img:hover{
+        opacity: 0.8;
+    }
     position: relative;
-    span{
-        position: absolute;
-        right: 5px;
-        top: 5px;
-        a{
-            color: #000;
-        }
-    }
-    span:hover{
-        text-decoration: underline;
-    }
+    
     .top-nav{
         position: relative;
         padding-right:8px;
@@ -62,6 +56,12 @@
     .jacket-bot{
         li{
             float: left;
+            padding: 0 8px 0 0;
+            
+            
+        }
+        .last-jacket{
+            padding-right: 0;
         }
        
     }

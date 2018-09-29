@@ -106,6 +106,40 @@
   vertical-align: middle;
   line-height: 30px;
 }
+.header-top .header-top-right .servce {
+  cursor: pointer;
+  position: relative;
+  display: block;
+  color: #8e8e8e;
+}
+.header-top .header-top-right .servce:hover {
+  background: #dcdcdc;
+}
+.header-top .header-top-right .servce ul {
+  position: absolute;
+  top: 32px;
+  left: 0px;
+  height: 66px;
+  z-index: 2;
+  display: none;
+}
+.header-top .header-top-right .servce:hover ul {
+  display: block;
+  transition: all 0.8s;
+}
+.header-top .header-top-right .servce li {
+  border-top: 1px solid #c9c9c9;
+  box-sizing: border-box;
+  padding-right: 0px;
+}
+.header-top .header-top-right .servce li a {
+  display: inline-block;
+  height: 33px;
+  width: 92px;
+  background: #dcdcdc;
+  text-align: center;
+  line-height: 33px;
+}
 .header-top .header-top-right ul li {
   float: left;
   line-height: 32px;
@@ -302,6 +336,12 @@
 .singlehot {
   background: #fff;
 }
+.singlehot img {
+  opacity: 1;
+}
+.singlehot img:hover {
+  opacity: 0.8;
+}
 
 .hot-list li {
   float: left;
@@ -391,20 +431,13 @@
 }
 
 .jacket {
-  height: 885px;
-  background: #ccc;
   position: relative;
 }
-.jacket span {
-  position: absolute;
-  right: 5px;
-  top: 5px;
+.jacket img {
+  opacity: 1;
 }
-.jacket span a {
-  color: #000;
-}
-.jacket span:hover {
-  text-decoration: underline;
+.jacket img:hover {
+  opacity: 0.8;
 }
 .jacket .top-nav {
   position: relative;
@@ -450,11 +483,43 @@
 }
 .jacket .jacket-bot li {
   float: left;
+  padding: 0 8px 0 0;
+}
+.jacket .jacket-bot .last-jacket {
+  padding-right: 0;
 }
 
-.newgoods {
-  height: 400px;
-  background: orchid;
+.newgoods li {
+  width: 222px;
+  margin-top: 22px;
+  float: left;
+  padding-right: 8px;
+}
+.newgoods li img {
+  width: 100%;
+}
+.newgoods li .goodname {
+  display: block;
+  color: black;
+  text-align: center;
+  margin-top: 16px;
+  font-size: 12px;
+}
+.newgoods li p {
+  text-align: center;
+  margin-top: 5px;
+  font-size: 12px;
+}
+
+.loading a {
+  height: 35px;
+  line-height: 35px;
+  width: 120px;
+  background: black;
+  color: #fff;
+  display: block;
+  text-align: center;
+  margin: 20px auto 40px;
 }
 
 .footer-content {
@@ -611,6 +676,23 @@ li {
 .wrapper {
   width: 1150px;
   margin: 0 auto;
+}
+
+.pr {
+  position: relative;
+}
+
+.more-style {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+}
+.more-style a {
+  color: #000;
+}
+
+.more-style:hover {
+  text-decoration: underline;
 }
 
 /*# sourceMappingURL=index.css.map */
