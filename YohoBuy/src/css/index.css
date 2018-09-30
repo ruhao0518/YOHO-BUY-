@@ -140,6 +140,31 @@
   text-align: center;
   line-height: 33px;
 }
+.header-top .header-top-right .focus {
+  position: relative;
+}
+.header-top .header-top-right .focus .focus-pic {
+  position: absolute;
+  left: -6px;
+  top: 32px;
+  z-index: 2;
+  width: 116px;
+  background: #f4f4f4;
+  display: none;
+}
+.header-top .header-top-right .focus:hover .focus-pic {
+  display: block;
+}
+.header-top .header-top-right .focus img {
+  width: 96px;
+  height: 96px;
+  padding-left: 10px;
+}
+.header-top .header-top-right .focus h5 {
+  height: 18px;
+  line-height: 18px;
+  text-align: center;
+}
 .header-top .header-top-right ul li {
   float: left;
   line-height: 32px;
@@ -256,6 +281,73 @@
   line-height: 14px;
   font-size: 14px;
   display: inline-block;
+}
+.header-bott .nav-cloth {
+  position: relative;
+}
+.header-bott .nav-cloth:hover div {
+  display: block;
+}
+.header-bott .nav-cloth div {
+  position: absolute;
+  left: -375px;
+  top: 40px;
+  width: 1349px;
+  z-index: 2;
+  background: #fff;
+  padding-left: 0;
+  padding-top: 30px;
+  height: 410px;
+  display: none;
+}
+.header-bott .nav-cloth div dl {
+  float: left;
+  width: 180px;
+  margin-right: 48px;
+}
+.header-bott .nav-cloth div dl a {
+  font-size: 12px;
+  height: 14px;
+  line-height: 14px;
+}
+.header-bott .nav-cloth div .d1 {
+  margin-left: 99px;
+}
+.header-bott .nav-cloth div .d2 {
+  margin-left: 48px;
+}
+.header-bott .nav-cloth div .d3 {
+  margin-left: 48px;
+}
+.header-bott .nav-cloth div dt {
+  width: 180px;
+  padding-bottom: 30px;
+  font-size: 14px;
+  height: 14px;
+  border-bottom: 1px solid #000;
+}
+.header-bott .nav-cloth div dd {
+  height: 14px;
+  width: 180px;
+  margin-bottom: 24px;
+}
+.header-bott .nav-cloth div dd a {
+  color: #a1a1a1;
+}
+.header-bott .nav-cloth div a {
+  color: #000;
+}
+.header-bott .nav-cloth div .nav-ad {
+  width: 337px;
+  height: 350px;
+  position: absolute;
+  left: 850px;
+  top: 0px;
+  z-index: 2;
+}
+.header-bott .nav-cloth div .nav-ad span {
+  margin-top: 20px;
+  padding-left: 100px;
 }
 
 .banner-content {
