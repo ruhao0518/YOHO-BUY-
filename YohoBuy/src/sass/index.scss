@@ -16,8 +16,10 @@
 }
 .left{
     float: left;
+    display: block;
 }
 .right{
+    display: block;
     float: right;
 }
 .clear{
@@ -37,12 +39,27 @@ li{
     color: red;
 }
 .clearfix:after,.clearfix:before{
-    content:".";
+    content:" ";
     display:table;
  }
   .clearfix:after{
     clear:both;
 }
+
+.clear::after {
+    content: ".";
+    clear: both;
+    display: block;
+    overflow: hidden;
+    font-size: 0;
+    height: 0;
+}
+
+.clear{
+    zoom: 1;
+}
+
+
 .wrapper{
     width: 1150px;
     margin: 0 auto;

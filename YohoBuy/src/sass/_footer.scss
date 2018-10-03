@@ -1,7 +1,7 @@
 .footer-content{
     
     background:#000;
-    height: 400px;
+    height: 367px;
 }
 .footer{
     .wrapper{
@@ -27,6 +27,7 @@
     }
 }
 .footer-help{
+    padding-top: 10px;
     .wrapper{
         width: 1170px;
     }
@@ -52,6 +53,7 @@
 }
 
 .footer-link{
+    padding-top: 10px;
     .wrapper{
         width: 1170px;
     }
@@ -108,6 +110,7 @@
     text-align: center;
     font-size: 12px;
     padding-bottom:10px;
+    padding-top: 20px;
     border-bottom: 1px solid #262626;
     a{
         color: #666;
@@ -115,6 +118,7 @@
 }
 
 .footer-link-container{
+    padding-top: 10px;
     color: #666;
     .link-info{
         color: #fff;

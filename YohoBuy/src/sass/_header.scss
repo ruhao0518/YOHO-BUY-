@@ -205,6 +205,12 @@
         width: 354px;
         height: 90px;
         position: relative;
+        .boy{
+            background: #3a3a3a;
+            h5{
+                color: #fff;
+            }
+        }
         ul{
            float: left;
            position: absolute;
@@ -231,6 +237,7 @@
         float: right;
         width: 396px;
         height: 50px;
+        
         .search-input{
             width: 230px;
             height: 24px;
@@ -262,12 +269,12 @@
         }
         .go-car{
             position: absolute;
-            right: 0;
-            top: 0;
-            span{
-                font-size:26px;
-                cursor: pointer;
-            }
+            right: 18px;
+            top: -8px;
+            display: block;
+            font-size:26px;
+            cursor: pointer;
+           
         }
     }
 }
