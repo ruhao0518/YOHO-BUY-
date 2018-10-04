@@ -1,0 +1,115 @@
+.simple-header{
+    height: 66px;
+    border-bottom: 2px solid #000;
+    margin-bottom: 20px;
+}
+.reg-wrapper{
+    width: 990px;
+    margin: 0 auto;
+}
+h2{
+    display: inline-block;
+    height: 66px;
+    img{
+        margin-top: 13px;
+    }
+}
+.reg-top-right{
+    height: 66px;
+    &>li{
+        float: left;
+        color: #000;
+        font-size: 12px;
+        height: 100%;
+        line-height: 66px;
+        padding: 0 10px;
+        a{
+            color: #000;
+            font-size: 12px;
+        }
+    }
+    .my{
+        height: 28px;
+        line-height: 28px;
+        margin-top: 19px;
+        position: relative;
+        i{
+            display: inline-block;
+            transform: rotate(180deg);
+            padding:0 2px;
+        }
+        &:hover .tool-select{
+            display: block;
+        }
+        &:hover{
+            background: #f4f4f4;
+        }
+        &:hover i{
+            transform: rotate(0deg);
+        }
+        .tool-select{
+            display: none;
+            position: absolute;
+            left: 0;
+            top:28px;
+            line-height: 28px;
+
+            a{
+                display: block;
+                width: 68px;
+                height: 28px;
+                line-height: 28px;
+                padding-left: 10px;
+                z-index: 2;
+                border-top: 1px solid #ddd;
+                background: #f4f4f4;
+            }
+        }
+    }
+    .servce{
+        .tool-select{
+            a{
+                width: 77px;
+            }
+        }
+        
+    }
+}
+.main-reg{
+    height: 730px;
+    .main-left{
+        margin-top: 107px;
+        width: 575px;
+        height: 318px;
+        border-right: 1px solid #999;
+        padding: 50px 0;
+        position: relative;
+        img{
+            width: 252px;
+            height: 190px;
+            position: absolute;
+            left: 163px;
+            top: 114px;
+        }
+    }
+}
+.main-right{
+    margin-top: 50px;
+    padding-left: 163px;
+    padding-top: 114px;
+    legend{
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+    label{
+        font-size: 18px;
+    }
+    input{
+        height: 30px;
+        width: 200px;
+        margin-bottom: 10px;
+    }
+    .regnow{
+        margin-left: 90px;
+    }
+}

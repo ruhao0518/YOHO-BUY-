@@ -735,6 +735,289 @@
   padding-right: 10px;
 }
 
+.simple-header {
+  height: 66px;
+  border-bottom: 2px solid #000;
+  margin-bottom: 20px;
+}
+
+.reg-wrapper {
+  width: 990px;
+  margin: 0 auto;
+}
+
+h2 {
+  display: inline-block;
+  height: 66px;
+}
+h2 img {
+  margin-top: 13px;
+}
+
+.reg-top-right {
+  height: 66px;
+}
+.reg-top-right > li {
+  float: left;
+  color: #000;
+  font-size: 12px;
+  height: 100%;
+  line-height: 66px;
+  padding: 0 10px;
+}
+.reg-top-right > li a {
+  color: #000;
+  font-size: 12px;
+}
+.reg-top-right .my {
+  height: 28px;
+  line-height: 28px;
+  margin-top: 19px;
+  position: relative;
+}
+.reg-top-right .my i {
+  display: inline-block;
+  transform: rotate(180deg);
+  padding: 0 2px;
+}
+.reg-top-right .my:hover .tool-select {
+  display: block;
+}
+.reg-top-right .my:hover {
+  background: #f4f4f4;
+}
+.reg-top-right .my:hover i {
+  transform: rotate(0deg);
+}
+.reg-top-right .my .tool-select {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 28px;
+  line-height: 28px;
+}
+.reg-top-right .my .tool-select a {
+  display: block;
+  width: 68px;
+  height: 28px;
+  line-height: 28px;
+  padding-left: 10px;
+  z-index: 2;
+  border-top: 1px solid #ddd;
+  background: #f4f4f4;
+}
+.reg-top-right .servce .tool-select a {
+  width: 77px;
+}
+
+.main-reg {
+  height: 730px;
+}
+.main-reg .main-left {
+  margin-top: 107px;
+  width: 575px;
+  height: 318px;
+  border-right: 1px solid #999;
+  padding: 50px 0;
+  position: relative;
+}
+.main-reg .main-left img {
+  width: 252px;
+  height: 190px;
+  position: absolute;
+  left: 163px;
+  top: 114px;
+}
+
+.main-right {
+  margin-top: 50px;
+  padding-left: 163px;
+  padding-top: 114px;
+}
+.main-right legend {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.main-right label {
+  font-size: 18px;
+}
+.main-right input {
+  height: 30px;
+  width: 200px;
+  margin-bottom: 10px;
+}
+.main-right .regnow {
+  margin-left: 90px;
+}
+
+.simple-header {
+  height: 66px;
+  border-bottom: 2px solid #000;
+  margin-bottom: 20px;
+}
+
+.reg-wrapper {
+  width: 990px;
+  margin: 0 auto;
+}
+
+.worning {
+  display: inline-block;
+  width: 980px;
+  height: 25px;
+  background-color: #f5f5f5;
+  line-height: 25px;
+  overflow: hidden;
+  margin-top: 10px;
+  font-size: 12px;
+  margin-left: 80px;
+  padding-left: 50px;
+}
+
+h2 {
+  display: inline-block;
+  height: 66px;
+}
+h2 img {
+  margin-top: 13px;
+}
+
+.reg-top-right {
+  height: 66px;
+}
+.reg-top-right > li {
+  float: left;
+  color: #000;
+  font-size: 12px;
+  height: 100%;
+  line-height: 66px;
+  padding: 0 10px;
+}
+.reg-top-right > li a {
+  color: #000;
+  font-size: 12px;
+}
+.reg-top-right .my {
+  height: 28px;
+  line-height: 28px;
+  margin-top: 19px;
+  position: relative;
+}
+.reg-top-right .my i {
+  display: inline-block;
+  transform: rotate(180deg);
+  padding: 0 2px;
+}
+.reg-top-right .my:hover .tool-select {
+  display: block;
+}
+.reg-top-right .my:hover {
+  background: #f4f4f4;
+}
+.reg-top-right .my:hover i {
+  transform: rotate(0deg);
+}
+.reg-top-right .my .tool-select {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 28px;
+  line-height: 28px;
+}
+.reg-top-right .my .tool-select a {
+  display: block;
+  width: 68px;
+  height: 28px;
+  line-height: 28px;
+  padding-left: 10px;
+  z-index: 2;
+  border-top: 1px solid #ddd;
+  background: #f4f4f4;
+}
+.reg-top-right .servce .tool-select a {
+  width: 77px;
+}
+
+.main-login {
+  height: 730px;
+  /* 底部空25的样式 */
+  /* 用户登录desktop版 */
+}
+.main-login .main-left {
+  margin-top: 107px;
+  width: 575px;
+  height: 318px;
+  border-right: 1px solid #999;
+  padding: 50px 0;
+  position: relative;
+}
+.main-login .main-left img {
+  width: 252px;
+  height: 190px;
+  position: absolute;
+  left: 163px;
+  top: 114px;
+}
+.main-login .main-right {
+  margin-top: 107px;
+  padding-left: 163px;
+  padding-top: 0;
+}
+.main-login .login-ul {
+  width: 270px;
+  height: 565px;
+  background: #ddd;
+}
+.main-login .mg-bot {
+  margin-bottom: 25px;
+}
+.main-login .type-desktop-bg {
+  /* 桌面版切换图片 */
+  width: 40px;
+  height: 40px;
+  background-image: url(../images/sprite.passport.png);
+  background-size: 595px 298px;
+  float: right;
+  cursor: pointer;
+  background-position: -369px -108px;
+}
+.main-login .type-tip {
+  width: 120px;
+  height: 30px;
+  background-image: url(../images/sprite.passport.png);
+  background-position: -323px -70px;
+  background-size: 595px 298px;
+  float: right;
+}
+.main-login .type-tip-inner {
+  color: #9b9b9b;
+  font-size: 13px;
+  padding: 4px 0 0 10px;
+}
+.main-login .desktop-login .login-top {
+  height: 20px;
+}
+.main-login .desktop-login .login-title {
+  font-size: 19px;
+  /* h3标题 */
+  font-weight: 700;
+  height: 20px;
+  line-height: 20px;
+}
+.main-login .desktop-login .country {
+  /* 国家加区号 */
+  cursor: pointer;
+}
+.main-login .desktop-login .country em {
+  line-height: 20px;
+  height: 20px;
+  font-size: 16px;
+  color: #b9b9b9;
+}
+.main-login .desktop-login .country i {
+  color: #b9b9b9;
+}
+
 * {
   padding: 0;
   margin: 0;
