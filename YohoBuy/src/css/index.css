@@ -366,7 +366,7 @@
 }
 
 .banner-nav li {
-  /* 灏忓浘鐨刲i  */
+  /* 小图的li  */
   float: left;
 }
 
@@ -375,14 +375,14 @@
 }
 
 .banner-bot {
-  /*灏忓浘鐨勭洅瀛愶紝瀹氫綅鍒板ぇ鐩掑瓙搴曢儴*/
+  /*小图的盒子，定位到大盒子底部*/
   position: absolute;
   bottom: 0;
   left: 0;
 }
 
 .banner-top {
-  /*澶у浘鐩掑瓙*/
+  /*大图盒子*/
   position: absolute;
   left: 0;
   top: 10px;
@@ -396,7 +396,7 @@
 }
 
 .banner-pic li {
-  /* 澶у浘鐨刲i,鍔ㄧ敾0.5s */
+  /* 大图的li,动画0.5s */
   opacity: 0;
   position: absolute;
   left: 0;
@@ -734,6 +734,10 @@
   color: #fff;
   padding-right: 10px;
 }
+.footer-link-container .link-section li {
+  float: left;
+  padding: 0 5px;
+}
 
 .simple-header {
   height: 66px;
@@ -966,7 +970,6 @@ h2 img {
 .main-login .login-ul {
   width: 270px;
   height: 565px;
-  background: #ddd;
 }
 .main-login .mg-bot {
   margin-bottom: 25px;
@@ -1015,6 +1018,66 @@ h2 img {
   color: #b9b9b9;
 }
 .main-login .desktop-login .country i {
+  color: #b9b9b9;
+}
+.main-login .desktop-login .switch {
+  /* 切换普通登录和手机登录 */
+  width: 100%;
+  height: 27px;
+  background-image: url(../images/sprite.passport.png);
+  background-position: -323px 0;
+  background-size: 595px 298px;
+  border-radius: 13px;
+  font-size: 14px;
+  position: relative;
+}
+.main-login .desktop-login .left-s, .main-login .desktop-login .right-s {
+  width: 146px;
+  height: 27px;
+  position: absolute;
+  text-align: center;
+  line-height: 27px;
+  border-radius: 13px;
+}
+.main-login .desktop-login .left-s {
+  left: 0;
+  top: 0;
+  background: #000;
+  color: #fff;
+}
+.main-login .desktop-login .right-s {
+  left: 124px;
+  top: 0;
+}
+.main-login .desktop-login .password-login input {
+  width: 270px;
+  height: 47px;
+  padding-left: 10px;
+  box-sizing: border-box;
+}
+.main-login .desktop-login .desktop-submit input {
+  display: block;
+  width: 270px;
+  height: 46px;
+  background-color: #ff1901;
+  color: #fff;
+  text-align: center;
+  letter-spacing: 10px;
+  font-size: 20px;
+  line-height: 46px;
+  cursor: pointer;
+}
+.main-login .desktop-login .other-opts input {
+  height: 14px;
+  width: 14px;
+  margin-bottom: 5px;
+}
+.main-login .desktop-login .other-opts i {
+  padding-left: 5px;
+  color: #b9b9b9;
+}
+.main-login .desktop-login .other-opts a {
+  padding: 0  5px;
   color: #b9b9b9;
 }
 
