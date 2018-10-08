@@ -43,10 +43,19 @@
 .banner-pic .active{
     opacity: 1;  
 }
+
 .btn-left,.btn-right{
     font-size: 40px;
     color: #ccc;
     cursor: pointer;
+    display: block;
+    background-color: rgba($color:#fff, $alpha: 0.5);
+    width: 48px;
+    padding-left: 10px;
+    box-sizing: border-box;
+    &:hover{
+        background-color: rgba($color:#fff, $alpha: 1);
+    }
 }
 .btn-left{
     position: absolute;

@@ -100,10 +100,40 @@
     }
     
 }
-.cart-table{
-    ul{
-
+/* 购物车为空 */
+.shop-cart-empty{
+    height: 328px;
+    
+    img{
+        padding-top: 55px;
+        margin: 0 auto;
+        width: 152px;
     }
+    p{
+        margin-top: 40px;
+        font-size: 18px;
+        font-weight: 300;
+        color: #4d4d4d;
+        text-align: center;
+    }
+    a{
+        margin-top: 18px;
+        display: block;
+        width: 130px;
+        height: 34px;
+        line-height: 34px;
+        font-size: 15px;
+        font-weight: 300;
+        color: #000;
+        border: 1px solid #000;
+        box-sizing: border-box;
+        cursor: pointer;
+        text-align: center;
+        margin: 18px auto;
+    }
+}
+.cart-table{
+    
     li{
         position: relative;
         i{
@@ -281,9 +311,7 @@
     }
 }
 .good-for-inner{
-    ul{
-
-    }
+    
     li{
         float: left;
         width: 190px;

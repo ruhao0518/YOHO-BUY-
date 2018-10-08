@@ -38,7 +38,7 @@
                 <li class="reg">
                     <span>Hi~</span>
                     <a href="#">[请登录]</a>
-                    <a href="http://192.168.124.8//YohoBuy/src/registor.html">[免费注册]</a>
+                    <a href="http://10.31.162.41//YohoBuy/src/registor.html">[免费注册]</a>
                 </li>
                 <li class="my">MY有货<i class="options-icon up iconfont"></i>
                     <div class="tool-select" >
@@ -69,9 +69,13 @@
             </ul>
         </div>
         <div class="tipbox">
-            <p>&nbsp;&nbsp;&nbsp;温馨提示：1. 选购单中的商品不保留库存，请及时结算。 2. 商品的价格、相关活动信息及库存以订单提交时为准。</p>
+            <p style="display:none">&nbsp;&nbsp;&nbsp;温馨提示：1. 选购单中的商品不保留库存，请及时结算。 2. 商品的价格、相关活动信息及库存以订单提交时为准。</p>
+            <p>&nbsp;&nbsp;&nbsp;温馨提示：亲爱的顾客，您还没有 <a href="http://10.31.162.41/YohoBuy/src/login.html">登录</a>
+                哦，所有商品价格、活动信息以登录后显示为准.
+            </p>
         </div>
-        <div class="pay-wrapper">
+        <!-- 购物车中有商品 -->
+        <div class="pay-wrapper" style="display:none">
             <div class="cart-title clear">
                 <p class="choose-all" style="width:8%"><input type='checkbox'>&nbsp;&nbsp;全选</p>
                 <p style="width:35%">商品信息</p>
@@ -124,6 +128,14 @@
                     <a href="#" class="solve right">去结算</a>
                 </div>
             </div>
+        </div>
+        <!-- 购物车为空 -->
+        <div class="shop-cart-empty">
+            
+            <img src="images/cart.png">
+            <p>购物车空空的哦，去看看心仪的商品吧~</p>
+            <a href="http://10.31.162.41/YohoBuy/src/">去购物</a>
+            
         </div>
         <!-- 为您优选 -->
         <div class="good-for clear">
