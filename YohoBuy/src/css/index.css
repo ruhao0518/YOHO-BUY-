@@ -476,10 +476,18 @@
   height: 490px;
 }
 
-.img-brand ul {
-  width: 100%;
-  height: 175px;
+.img-brand {
+  position: relative;
   overflow: hidden;
+  width: 1150px;
+  height: 175px;
+}
+.img-brand ul {
+  width: 3450px;
+  height: 175px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
 }
 .img-brand li {
   float: left;
@@ -487,6 +495,11 @@
 }
 .img-brand .last-band {
   padding-right: 0px;
+}
+.img-brand .btn-left, .img-brand .btn-right {
+  top: 70px;
+  font-size: 20px;
+  width: 35px;
 }
 
 .logo-brand .logo-brand-switch {
@@ -1610,6 +1623,9 @@ li {
   cursor: pointer;
 }
 .louti ul li:hover {
+  background: #000;
+}
+.louti ul .active {
   background: #000;
 }
 

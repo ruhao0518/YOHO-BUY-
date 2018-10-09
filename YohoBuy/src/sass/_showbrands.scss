@@ -2,17 +2,29 @@
     height: 490px;
 }
 .img-brand{
+    position: relative;
+    overflow: hidden;
+    width: 1150px;
+    height: 175px;
     ul{
-        width: 100%;
+        width: 3450px;
         height: 175px;
-        overflow: hidden;
+        position: absolute;
+        left: 0px;
+        top:0px;
     }
-    li{                             
+    li{ 
+
         float: left;
         padding-right: 8px;   
     }
     .last-band{
         padding-right: 0px;
+    }
+    .btn-left,.btn-right{
+        top: 70px;
+        font-size: 20px;
+        width: 35px;
     }
 }
 

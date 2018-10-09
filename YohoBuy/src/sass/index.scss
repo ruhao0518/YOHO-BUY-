@@ -79,6 +79,7 @@ li{
         color: #000;
     }
 }
+
 .more-style:hover{
     text-decoration: underline;
 }
@@ -183,6 +184,9 @@ li{
             &:hover{
                 background: #000;
             }
+        }
+        .active{
+            background: #000;
         }
     }
 }

@@ -9,7 +9,7 @@
 	}
 
 	echo json_encode($arrdata); */
-	$result=mysql_query('select * from hotlist');
+	$result=mysql_query('select * from details');
 
 	$arrdata=array();
 	for($i=0;$i<mysql_num_rows($result);$i++){
