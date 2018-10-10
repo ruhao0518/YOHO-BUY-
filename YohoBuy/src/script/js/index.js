@@ -1,4 +1,4 @@
-define(['../thirdplugins/jquery'], function () {
+define(['jquery'], function () {
     return {
         shuju: !function () {
             //引入头部html文件
@@ -33,14 +33,89 @@ define(['../thirdplugins/jquery'], function () {
             //引入尾部html文件
             $('.footer-content').load("footer.html");
         }(),
+        /* 轮播图数据 */
+        lunbotushuju:!function () { 
+            $.ajax({
+                url:'http://10.31.162.41/YohoBuy/php/getdata.lunbo.php',
+                dataType:'json'
+            }).done(function(data){
+                console.log(data)
+              
+                var $str=''
+                var $str1='';
+                $.each(data,function (index,item) { 
+                    if(index==0){
+                        $str+=`<li class='active'><img src="${item.url}"><a href="#" title="${item.title}"></a></li>`;
+                    }else if(index==7){
+                        $str+=`<li ><img src="${item.url}"><a href="#" title="${item.title}"></a></li><div class="btn-left"><span class="iconfont "></span></div>
+                        <div class="btn-right"><span class="iconfont "></span></div>`;
+                        
+                    }else{
+                        $str+=`<li><img src="${item.url}"><a href="#" title="${item.title}"></a></li>`;
+                    }
+                })
+                $.each(data,function (index,item) { 
+                    if(index==7){
+                        $str1+=`<li class='last'><img src="${item.ssrc}"><a href="#"></a></li>`
+                    }else{
+                        $str1+=`<li><img src="${item.ssrc}"><a href="#"></a></li>`;
+                    }
+                 })
+                $('.banner-pic').html($str);
+                $('.banner-nav').html($str1);
+            }); 
+         }(  ),
+        /* 顶部的tab切换 */
+        tab:!function () { 
 
+            $('.main-nav-list li').on('click',function () { 
+                $('.header-bott ul').eq($(this).index()).show().siblings('ul').hide();
+             })
+
+         }(  ),
+        
+        admin:!function () { 
+            function addCookie(key,value,day){
+				var date=new Date();//创建日期对象
+				date.setDate(date.getDate()+day);//过期时间：获取当前的日期+天数，设置给date
+				document.cookie=key+'='+encodeURI(value)+';expires='+date;//添加cookie，设置过期时间
+			}
+			function getCookie(key){
+				var str=decodeURI(document.cookie);
+				var arr=str.split('; ');
+				for(var i=0;i<arr.length;i++){
+					var arr1=arr[i].split('=');
+	 				if(arr1[0]==key){
+						return arr1[1];
+					}
+				}
+			}
+			function delCookie(key,value){
+				addCookie(key,value,-1);//添加的函数,将时间设置为过去时间
+			}
+			
+			
+			//显示隐藏
+			$(function(){
+				if(getCookie('UserName')){
+					$('.admin-not-login').hide();
+					$('.admin-login').show().find('span').html('Hi~'+getCookie('UserName'));
+				}
+				$('.admin-login a').on('click',function(){
+					addCookie('UserName','',-1);
+					$('.admin-login').hide();
+					$('.admin-not-login').show();
+				});
+			});
+         }(   ),
         xiaoguo: !function () {
             /* 轮播图 */
             var $bannerpic = $('.banner-pic li');
             var $bannernav = $('.banner-nav li');
             var $bannerimg = $('.banner-nav li img');
             var $num = 0
-
+            $('.banner-pic li').first().addClass('active');
+            $bannernav.last().addClass('last');
             //鼠标滑过nav时
             $bannerimg.css({ opacity: 0.8 });
             $bannernav.hover(function () {

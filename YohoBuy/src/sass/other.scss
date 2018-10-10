@@ -62,6 +62,18 @@
             width: 420px;
         }
     }
+    .min{
+        position: relative;
+    }
+    .min-fang{
+        height: 280px;
+        width: 280px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        background: red;
+        opacity: 0.3;
+    }
     .pull-left-tab{
         margin-right: 55px;
         img{

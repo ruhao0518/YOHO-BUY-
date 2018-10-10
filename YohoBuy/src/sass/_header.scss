@@ -187,29 +187,77 @@
 
 .header-mid{
     position: relative;
-    h1{
+    .h1-en{
         img{
             display: block;
         }
-        height: 40px;
+        /* height: 40px;
         width: 171px;
         position: absolute;
         left: 0;
         right: 0;
         top: 0;
         bottom: 0;
-        margin: auto;
+        margin: auto; */
+        background: url(../images/logo-en.png) no-repeat 50%;
+        width: 182px;
+        height: 53px;
+        left: 43%;
+        margin-top: 22px;
+        position: absolute;
+        display: none;
+    }
+    .h1-cn{
+        background: url(../images/logo-cn.png) no-repeat 50%;
+        width: 182px;
+        height: 53px;
+        left: 43%;
+        margin-top: 22px;
+        position: absolute;
     }
 
     .main-nav-list{
         width: 354px;
         height: 90px;
         position: relative;
+        li{
+            cursor: pointer;
+        }
         .boy{
             background: #3a3a3a;
             h5{
                 color: #fff;
             }
+        }
+        .girl{
+            &:hover{
+                background: #ff88ae;
+                h5{
+                    color: #fff;
+                }
+            }
+            
+            
+        }
+        .child{
+            &:hover{
+                background: #7bd3f9; 
+                h5{
+                    color: #fff;
+                }
+            }
+            
+            
+        }
+        .life{
+            &:hover{
+                background: #5e4b3c;
+                h5{
+                    color: #fff;
+                }
+            }
+            
+            
         }
         ul{
            float: left;
@@ -281,8 +329,20 @@
 }
 
 .header-bott{
-    background: #3a3a3a;
+
     height: 40px;
+    .boy-ul{
+        background: #3a3a3a;
+    }
+    .girl-ul{
+        display: none;
+    }
+    .child-ul{
+        display: none;
+    }
+    .life-ul{
+        display: none;
+    }
     ul{
         padding-left: 99px;
 
@@ -299,6 +359,10 @@
             line-height: 14px;
             font-size: 14px;
             display: inline-block;
+            &:hover{
+                padding-bottom: 3px;
+                border-bottom: 2px solid #fff;
+            }
         }
     }
     .nav-cloth{

@@ -12,9 +12,13 @@
         </div>
         <div class="header-top-right right">
             <ul>
-                <li>
+                <li class="admin-not-login">
                     <span>Hi~</span><a  href="http://10.31.162.41//YohoBuy/src/login.html#"  >[请登录]</a>
                     <a  href="http://10.31.162.41//YohoBuy/src/registor.html" class="registbar" ">[免费注册]</a>
+                </li>
+                <li class="admin-login">
+                    <span></span>
+                    <a href="javascript:;">退出</a>
                 </li>
                 <li>
                     <span class="tag-seprate"></span>
@@ -65,14 +69,15 @@
         </div>
     </div>
     <div class="header-mid">
-        <h1><img src="images/logo-en.png"></h1>
+        <h1 class="h1-en" style="transform:rotateX(180deg)"><!-- <img src="images/logo-en.png"> --></h1>
+        <h1 class="h1-cn" style="transform:rotateX(180deg)"><!-- <img src="images/logo-cn.png" style="transform:rotateX(180deg)"> --></h1>
         <div class="wrapper">
             <div class="main-nav-list">
                 <ul class="clear">
                     <li class="boy"><h5>男生</h5><h5 class="gray">BOYS</h5></li>
-                    <li><h5>女生</h5><h5 class="gray">GIRLS</h5></li>
-                    <li><h5>潮童</h5><h5 class="gray">KIDS</h5></li>
-                    <li><h5>创意生活</h5><h5 class="gray">LIFE STYLE</h5></li>
+                    <li class="girl"><h5>女生</h5><h5 class="gray">GIRLS</h5></li>
+                    <li class="child"><h5>潮童</h5><h5 class="gray">KIDS</h5></li>
+                    <li class="life"><h5>创意生活</h5><h5 class="gray">LIFE STYLE</h5></li>
                 </ul>
             </div>
 
@@ -83,9 +88,9 @@
                     <input type="text" name="" class="search-input" placeholder="潮购十一 最高立减￥400">
                     <a class="search-pic" href="#" class="search-btn"><img  src="images/search.png"></a>
                     <ul class="search-hot">
-                        <li><a href="#">vas</a></li>
-                        <li><a href="#">vas</a></li>
-                        <li><a href="#">vas</a></li>
+                        <li><a href="#">vans</a></li>
+                        <li><a href="#">vans</a></li>
+                        <li><a href="#">vans</a></li>
                     </ul>
                 </div>
                 <a href='http://10.31.162.41/YohoBuy/src/cart.html' target="_blank"><span class="iconfont go-car"></span></a>
@@ -96,7 +101,7 @@
 
 
 <div class="header-bott">
-    <ul>
+    <ul class="boy-ul clear">
         <li><a href="#">新品到着</a></li>
         <li><a href="#">品牌一览</a></li>
         <li class="nav-cloth">
@@ -159,6 +164,91 @@
         <li><a href="#">鞋履</a></li>
         <li><a href="#">包袋</a></li>
         <li><a href="#">配饰·其他</a></li>
+        <li><a href="#">逛</a></li>
+        <li><a href="#">SALE</a></li>
+    </ul>
+    <ul class="girl-ul clear" style="background: #ff88ae">
+        <li><a href="#">新品到着</a></li>
+        <li><a href="#">品牌一览</a></li>
+        <li class="nav-cloth">
+            <a href="#">服饰</a>
+            <div>
+                <dl class="d1">
+                    <dt>
+                        <a href="#">
+                            <h3>上装</h3>
+                        </a>
+                    </dt>
+                    <dd><a style="color:red" href="#">T裇</a></dd>
+                    <dd><a style="color:red" href="#">衬衫</a></dd>
+                    <dd><a href="#">POLO衫</a></dd>
+                    <dd><a href="#">卫衣</a></dd>
+                    <dd><a href="#">夹克</a></dd>
+                    <dd><a href="#">防风外套</a></dd>
+                    <dt>
+                        <a href="#">
+                            <h3>下装</h3>
+                        </a>
+                    </dt>
+                    <dd><a style="color:red" href="#">休闲裤</a></dd>
+                    
+                </dl>
+                <dl class="d2">
+                    
+                    <dd><a href="#">牛仔裤</a></dd>
+                    <dd><a style="color:red" href="#">短裤</a></dd>
+                    <dd><a href="#">运动裤</a></dd>
+                    <dt>
+                        <a href="#">
+                            <h3>热门品牌</h3>
+                        </a>
+                    </dt>
+                    <dd><a href="#">ABLE JEANS</a></dd>
+                    <dd><a style="color:red" href="#">Dickies</a></dd>
+                    <dd><a href="#">HIPANDA</a></dd>
+                    <dd><a style="color:red" href="#">MADNESS</a></dd>
+                    <dd><a href="#">THETHING</a></dd>
+                </dl>
+                <dl class="d3">
+                    
+                    <dd><a href="#">RIPNDIP</a></dd>
+                    <dd><a href="#">DUSTY</a></dd>
+                    <dd><a href="#">Red Charcoal</a></dd>
+                    <dd><a href="#">AKOP.</a></dd>
+                    <dd><a style="color:red" href="#">古由卡/Guuka</a></dd>
+                    <dd><a href="#">PSO BRAND</a></dd>
+                    <dd><a href="#">Life·After Life</a></dd>
+                    <dd><a href="#">COKEIN</a></dd>
+                </dl>
+                <div class="nav-ad">
+                    <a href="#"><img src="//img11.static.yhbimg.com/yhb-img01/2018/03/27/15/0125da7b127dcbc8f58763494b74ba5bea.jpg?imageView2/2/w/337/h/250/q/90"></a>
+                    <a href="#"><span>IN季新品全面开售</span></a>
+                </div>
+            </div>
+            
+        </li>
+        <li><a href="#">鞋履</a></li>
+        <li><a href="#">包袋</a></li>
+        <li><a href="#">配饰·其他</a></li>
+        <li><a href="#">逛</a></li>
+        <li><a href="#">SALE</a></li>
+    </ul>
+    <ul class="child-ul clear" style="background: #7bd3f9">
+        <li><a href="#">新品到着</a></li>
+        <li><a href="#">品牌一览</a></li>
+        <li><a href="#">男童</a></li>
+        <li><a href="#">女童</a></li>
+        <li><a href="#">鞋包配饰</a></li>
+        <li><a href="#">逛</a></li>
+        <li><a href="#">SALE</a></li>
+    </ul>
+    <ul class="life-ul clear" style="background: #5e4b3c">
+        <li><a href="#">新品到着</a></li>
+        <li><a href="#">品牌一览</a></li>
+        <li><a href="#">数码3C</a></li>
+        <li><a href="#">居家</a></li>
+        <li><a href="#">玩具礼品</a></li>
+        <li><a href="#">美妆</a></li>
         <li><a href="#">逛</a></li>
         <li><a href="#">SALE</a></li>
     </ul>

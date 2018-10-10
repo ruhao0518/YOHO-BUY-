@@ -183,28 +183,64 @@
 .header-mid {
   position: relative;
 }
-.header-mid h1 {
-  height: 40px;
+.header-mid .h1-en {
+  /* height: 40px;
   width: 171px;
   position: absolute;
   left: 0;
   right: 0;
   top: 0;
   bottom: 0;
-  margin: auto;
+  margin: auto; */
+  background: url(../images/logo-en.png) no-repeat 50%;
+  width: 182px;
+  height: 53px;
+  left: 43%;
+  margin-top: 22px;
+  position: absolute;
+  display: none;
 }
-.header-mid h1 img {
+.header-mid .h1-en img {
   display: block;
+}
+.header-mid .h1-cn {
+  background: url(../images/logo-cn.png) no-repeat 50%;
+  width: 182px;
+  height: 53px;
+  left: 43%;
+  margin-top: 22px;
+  position: absolute;
 }
 .header-mid .main-nav-list {
   width: 354px;
   height: 90px;
   position: relative;
 }
+.header-mid .main-nav-list li {
+  cursor: pointer;
+}
 .header-mid .main-nav-list .boy {
   background: #3a3a3a;
 }
 .header-mid .main-nav-list .boy h5 {
+  color: #fff;
+}
+.header-mid .main-nav-list .girl:hover {
+  background: #ff88ae;
+}
+.header-mid .main-nav-list .girl:hover h5 {
+  color: #fff;
+}
+.header-mid .main-nav-list .child:hover {
+  background: #7bd3f9;
+}
+.header-mid .main-nav-list .child:hover h5 {
+  color: #fff;
+}
+.header-mid .main-nav-list .life:hover {
+  background: #5e4b3c;
+}
+.header-mid .main-nav-list .life:hover h5 {
   color: #fff;
 }
 .header-mid .main-nav-list ul {
@@ -270,8 +306,19 @@
 }
 
 .header-bott {
-  background: #3a3a3a;
   height: 40px;
+}
+.header-bott .boy-ul {
+  background: #3a3a3a;
+}
+.header-bott .girl-ul {
+  display: none;
+}
+.header-bott .child-ul {
+  display: none;
+}
+.header-bott .life-ul {
+  display: none;
 }
 .header-bott ul {
   padding-left: 99px;
@@ -287,6 +334,10 @@
   line-height: 14px;
   font-size: 14px;
   display: inline-block;
+}
+.header-bott ul a:hover {
+  padding-bottom: 3px;
+  border-bottom: 2px solid #fff;
 }
 .header-bott .nav-cloth {
   position: relative;
@@ -858,7 +909,7 @@ h2 img {
 
 .main-right {
   margin-top: 50px;
-  padding-left: 163px;
+  padding-left: 80px;
   padding-top: 114px;
 }
 .main-right legend {
@@ -875,6 +926,10 @@ h2 img {
 }
 .main-right .regnow {
   margin-left: 90px;
+}
+
+.error {
+  color: red;
 }
 
 .simple-header {

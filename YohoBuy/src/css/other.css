@@ -62,6 +62,18 @@
   float: left;
   width: 420px;
 }
+.main-d .min {
+  position: relative;
+}
+.main-d .min-fang {
+  height: 280px;
+  width: 280px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: red;
+  opacity: 0.3;
+}
 .main-d .pull-left-tab {
   margin-right: 55px;
 }
